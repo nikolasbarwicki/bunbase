@@ -1,5 +1,5 @@
 {
-  "name": "starting-template",
+  "name": "bunbase",
   "private": true,
   "type": "module",
   "module": "src/index.ts",
