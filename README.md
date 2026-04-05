@@ -89,3 +89,7 @@ Maximum strictness enabled:
 ├── .editorconfig         # Editor settings
 └── CLAUDE.md             # AI agent instructions
 ```
+
+---
+
+Built with [Yapper](https://yapper.to/) by [Nikolas](https://nbarwicki.com)
