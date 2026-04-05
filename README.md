@@ -1,4 +1,4 @@
-# Starting Template
+# bunbase 🧊
 
 Strict TypeScript starter optimized for AI-assisted development. Every commit is validated by five parallel checks — linting, formatting, type checking, dead code detection, and tests — so agents (and humans) get instant feedback on every change.
 
