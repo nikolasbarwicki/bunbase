@@ -24,14 +24,8 @@
     "import/no-cycle": "error",
     "import/no-default-export": "warn",
 
-    // --- Sort imports (closest to perfectionist) ---
-    "sort-imports": ["warn", {
-      "ignoreCase": true,
-      "ignoreDeclarationSort": false,
-      "ignoreMemberSort": false,
-      "allowSeparatedGroups": true,
-      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-    }],
+    // --- Sort imports handled by oxfmt's sortImports ---
+    "sort-imports": "off",
 
     // --- Unicorn strict picks ---
     "unicorn/no-null": "off",
@@ -44,7 +38,7 @@
     "promise/no-return-wrap": "error",
 
     // --- Turn off rules that conflict with Bun or are too noisy ---
-    "unicorn/prefer-node-protocol": "off",
+    "unicorn/prefer-node-protocol": "off"
   },
   "env": {
     "builtin": true
