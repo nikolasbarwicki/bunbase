@@ -2,28 +2,78 @@
   "formatter": "language_server",
   "format_on_save": "on",
   "lsp": {
-    "oxc": {
+    "vtsls": {
       "settings": {
-        "oxc": {
-          "fmt": {
-            "configPath": ".oxfmtrc.json"
+        "javascript": {
+          "preferences": {
+            "includePackageJsonAutoImports": "on"
           }
+        },
+        "typescript": {
+          "preferences": {
+            "includePackageJsonAutoImports": "on"
+          }
+        }
+      }
+    },
+    "oxfmt": {
+      "initialization_options": {
+        "settings": {
+          "configPath": null,
+          "flags": {},
+          "fmt.configPath": null,
+          "fmt.experimental": true,
+          "run": "onSave",
+          "typeAware": false,
+          "unusedDisableDirectives": false
+        }
+      }
+    },
+    "oxlint": {
+      "initialization_options": {
+        "settings": {
+          "disableNestedConfig": false,
+          "fixKind": "safe_fix",
+          "run": "onType",
+          "typeAware": null,
+          "unusedDisableDirectives": "deny"
         }
       }
     }
   },
   "languages": {
     "TypeScript": {
-      "formatter": "language_server",
-      "language_servers": ["oxc", "typescript-language-server"]
+      "formatter": {
+        "language_server": {
+          "name": "oxfmt"
+        }
+      },
+      "language_servers": ["oxc", "typescript-language-server"],
+      "code_actions_on_format": {
+        "source.fixAll.oxc": true
+      }
     },
     "JavaScript": {
-      "formatter": "language_server",
-      "language_servers": ["oxc", "typescript-language-server"]
+      "formatter": {
+        "language_server": {
+          "name": "oxfmt"
+        }
+      },
+      "language_servers": ["oxc", "typescript-language-server"],
+      "code_actions_on_format": {
+        "source.fixAll.oxc": true
+      }
     },
     "TSX": {
-      "formatter": "language_server",
-      "language_servers": ["oxc", "typescript-language-server"]
+      "formatter": {
+        "language_server": {
+          "name": "oxfmt"
+        }
+      },
+      "language_servers": ["oxc", "typescript-language-server"],
+      "code_actions_on_format": {
+        "source.fixAll.oxc": true
+      }
     },
     "JSON": {
       "formatter": "language_server",
